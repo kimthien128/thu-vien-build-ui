@@ -14,7 +14,7 @@ export function createStore(reducer) {
     function render() {
         for (const [root, component] of roots) {
             const output = component() 
-            root.innerHtml = output 
+            root.innerHTML = output 
         }
     }
 
